@@ -1,41 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
 
+    <link rel="stylesheet" href="estilo.css">
+    <title>MI PORTAFOLIO</title>
 </head>
 
 <body>
-    <h1>BIENVENIDOS A MI SITIO WEB</h1>
-    <header>
-        <h1>MI PORTAFOLIO</h1>
-        <p>Bienvenido a mi portafolio en línea</p>
-    </header>
-    <section id="acerca">
-        <h2>Acerca de Mí</h2>
-        <img src="IMG_0014.jpg" width="200" height="200">
-        <p>Tengo un caracter emprendedor, ya que en las actividades laborales suelo ser muy dinamico, responsable, puntual, me agrada el trabajo en equipo, siempre abierto a la enzeñanza y aprendizaje de nuevos conocimientos.</p>
+
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>MI PORTAFOLIO</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+
+                            <li><a href="https://api.whatsapp.com/send?phone=59172568902&text=BUENOS%20DIAS...." onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">BIENVENIDOS A MI SITIO WEB </p>
+                <h2>HOLA! Soy Gary Rodrigo Mamani</h2>
+                <p class="descripcion">Tengo un caracter emprendedor, ya que en las actividades laborales suelo ser muy dinamico, responsable, puntual, me agrada el trabajo en equipo, siempre abierto a la enzeñanza y aprendizaje de nuevos conocimientos. </p>
+                <a href="https://gary-rodrigo-mamani.jimdosite.com/">Ir a Portafolio</a>
+            </div>
+        </div>
     </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/IMG_0014.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy Gary Rodrigo Mamani </h2>
+            <h3>Desarrollador Web</h3>
+            <p>FECHA DE NACIMIENTO: 01/04/2000 <br> LUGAR DE NACIMIENTO: Ciudad de La Paz, ProvinciaMurillo <br> C.I. : 9943802 Lp <br> NACIONALIDAD: boliviana<br> DOMICILIO: Zona: Franz Tamayo,Calle: Daniel Campos,Nº:1625<br> CELULAR : 72568902<br> CORREO
+                ELECTRÓNICO: garyrodrim@gmail.com<br>
+
+                <p>
+                    <a href="https://www.canva.com/design/DAFVz7T19-M/VPgHSJCaWcAF07nOTRU7yA/view?utm_content=DAFVz7T19-M&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Descargar CV</a>
+        </div>
+    </section>
+
+
+    <!-- SECCTION C O N T A C T O -->
     <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
 
-        <h2>FECHA DE NACIMIENTO</h2>
-        <p>01/04/2000</p>
-        <h2>LUGAR DE NACIMIENTO</h2>
-        <p>Ciudad de La Paz, ProvinciaMurillo</p>
-        <h2>NACIONALIDAD</h2>
-        <p>boliviana</p>
-        <h2>CONTACTO</h2>
-        <p>72568902</p>
-        <h2>CORREO</h2>
-        <p> garyrodrim@gmail.com</p>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
     </section>
 
+    <!-- SECCION FOOTER -->
     <footer>
-        <p>&copy; 2023 Gary Rodrigo Mamani</p>
+        <p>Desarrollado por gary-rodrigo-mamani-2023</p>
+
     </footer>
 </body>
 
